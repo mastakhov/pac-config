@@ -9,6 +9,8 @@ function FindProxyForURL(url, hostname) {
   let proxiedDomains = [
     '.bungie.net',
     '.destinyitemmanager.com',
+    '.youtube.com',
+    '.googlevideo.com',
   ];
 
   for (const proxiedDomain of proxiedDomains) {
