@@ -1,4 +1,5 @@
 'use strict';
+/*jshint esversion: 6 */
 
 function FindProxyForURL(url, hostname) {
 
@@ -10,7 +11,7 @@ function FindProxyForURL(url, hostname) {
     '.destinyitemmanager.com',
   ];
 
-  for (proxiedDomain of proxiedDomains) {
+  for (const proxiedDomain of proxiedDomains) {
     if (dnsDomainIs(hostname, proxiedDomain)) {
       return PROXY;
     }
